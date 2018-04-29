@@ -439,7 +439,8 @@ func (b Board) MakeMove(m Move) *Board {
 	switch {
 	case m == NullMove:
 		// do nothing
-	case b.Piece[m.From] == b.my(King) && b.Piece[m.To] == b.my(Rook): // castling
+	case b.Piece[m.From] == b.my(King) && b.Piece[m.To] == b.my(Rook) ||
+		(b.Piece[m.From] == b.my(King) && (m.From-m.To == 2 || m.From-m.To == -2)): // castling
 		wing := kingSide
 		if m.To < m.From {
 			wing = queenSide
