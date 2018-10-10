@@ -4,8 +4,9 @@ package engine
 
 import (
 	"errors"
-	"github.com/malbrecht/chess"
 	"time"
+
+	"github.com/jonpchin/chess"
 )
 
 var (

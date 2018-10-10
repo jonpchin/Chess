@@ -4,7 +4,8 @@ package pgn
 
 import (
 	"fmt"
-	"github.com/malbrecht/chess"
+
+	"github.com/jonpchin/chess"
 )
 
 // DB represents a collection of chess games. Its zero value is an empty

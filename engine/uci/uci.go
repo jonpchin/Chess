@@ -6,8 +6,6 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
-	"github.com/malbrecht/chess"
-	"github.com/malbrecht/chess/engine"
 	"io"
 	"log"
 	"os/exec"
@@ -15,6 +13,9 @@ import (
 	"strings"
 	"time"
 	"unicode"
+
+	"github.com/jonpchin/chess"
+	"github.com/jonpchin/chess/engine"
 )
 
 // CommunicationTimeout is the time to wait for a response from the engine. If

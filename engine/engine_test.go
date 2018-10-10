@@ -1,8 +1,9 @@
 package engine
 
 import (
-	"github.com/malbrecht/chess"
 	"log"
+
+	"github.com/jonpchin/chess"
 )
 
 func ExampleEngine() {

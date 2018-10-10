@@ -3,8 +3,8 @@ package uci
 import (
 	"bufio"
 	"fmt"
-	"github.com/malbrecht/chess"
-	"github.com/malbrecht/chess/engine"
+	"github.com/jonpchin/chess"
+	"github.com/jonpchin/chess/engine"
 	"io"
 	"log"
 	"os"
