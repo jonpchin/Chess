@@ -83,6 +83,8 @@ type Info interface {
 	// if no best move has been found yet.
 	BestMove() (move chess.Move, ok bool)
 
+	BestMoveRaw() (string, bool)
+
 	// Pv returns the principal variation of this Info. It can be nil if no
 	// pv information is available.
 	Pv() *Pv

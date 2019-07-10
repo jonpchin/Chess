@@ -444,6 +444,11 @@ func (i Info) BestMove() (chess.Move, bool) {
 	return chess.NullMove, false
 }
 
+func (i Info) BestMoveRaw() (string, bool) {
+	move, ok := i.Value("bestmove")
+	return move, ok
+}
+
 func (i Info) Pv() *engine.Pv {
 	pv, ok := i.Value("pv")
 	if !ok {
