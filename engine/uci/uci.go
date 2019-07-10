@@ -310,7 +310,7 @@ loop:
 			break
 		}
 		if c.log != nil {
-			log.Println("|", line)
+			//log.Println("|", line)
 		}
 		switch field := tokenise(line); field.next() {
 		case "id":
