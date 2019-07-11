@@ -267,7 +267,7 @@ loop:
 			switch v := in.(type) {
 			case string:
 				if c.log != nil {
-					c.log.Println(">", v)
+					//c.log.Println(">", v)
 				}
 				c.err = timeoutWrite(c.stdin, v)
 				switch {
